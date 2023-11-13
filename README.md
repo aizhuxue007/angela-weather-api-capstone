@@ -6,7 +6,7 @@
 3. Enter command "git clone 'https://github.com/aizhuxue007/angela-weather-api-capstone.git'" to download
 4. Enter "cd" to go into the project folder
 5. Enter "npm i" to install dependencies
-6. From OpenWeather dashboard get the apiID and put into a NEW file called .env. Save the environment variable as WEATHER_API='yourAPI'. 
+6. From OpenWeather dashboard get the active apiID and put into a NEW file called .env. Save the environment variable as WEATHER_API='yourAPI'. 
 7. Enter 'npm run start'
 8. On your browser open localhost:3000
 
