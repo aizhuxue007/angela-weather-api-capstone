@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  </head>
+  <body>
+    <main>
+      <% if (locals.weather) { %>
+
+      <h1>Weather in <%= weather.cityName %></h1>
+      <section class="days">
+        <% weather.list.forEach(day => { %>
+        <section class="day">
+          <h2 class="day__date"><%= day.date %></h2>
+
+          <% day.list.forEach(interval => { %>
+          <div class="day__interval">
+            <%= interval.hour %> <%= interval.weatherMain %>
+            <p><%= interval.weatherDescription %></p>
+            <p><%= interval.temp %> °F</p>
+            <p>Feels like <%= interval.feelsLike %> °F.</p>
+          </div>
+          <% }) %>
+        </section>
+        <% }) %> 
+        <% } else { %>
+            
+          <% } %>
+      </section>
+    </main>
+  </body>
+</html>
