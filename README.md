@@ -9,3 +9,4 @@
 6. From OpenWeather dashboard get the apiID and put the id into a file called .env as WEATHER_API='yourAPI'. 
 7. Enter 'npm run start'
 8. On your browser open localhost:3000
+9. Buy me a lambo on patreon
