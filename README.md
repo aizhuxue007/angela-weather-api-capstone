@@ -11,4 +11,4 @@
 8. On your browser open localhost:3000
 
 Example
-<img src="https://ibb.co/NCV2wB8" alt="screenshot of my weather app">
+<img src="https://i.ibb.co/9g8HR5F/Screenshot-2023-11-13-at-1-29-21-PM.png" alt="screenshot of my weather app">
