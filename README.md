@@ -10,3 +10,5 @@
 7. Enter 'npm run start'
 8. On your browser open localhost:3000
 
+Example
+<img src="https://ibb.co/NCV2wB8" alt="screenshot of my weather app">
