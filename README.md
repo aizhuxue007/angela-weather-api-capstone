@@ -11,5 +11,6 @@
 8. On your browser open localhost:3000
 
 Visual Demo
-<a href="https://ibb.co/Czdswp7"><img src="https://i.ibb.co/Czdswp7/Screenshot-2023-11-13-at-1-54-27-PM.png" alt="Screenshot-2023-11-13-at-1-54-27-PM" border="0"></a>
+<br />
+<a href="https://ibb.co/Czdswp7"><img src="https://i.ibb.co/2y2YF0t/Screenshot-2023-11-13-at-1-54-27-PM.png" alt="Screenshot-2023-11-13-at-1-54-27-PM" border="0"></a><br />
 <a href="https://ibb.co/NCV2wB8"><img src="https://i.ibb.co/H4FTm8W/Screenshot-2023-11-13-at-1-29-21-PM.png" alt="Screenshot-2023-11-13-at-1-29-21-PM" border="0" /></a>
