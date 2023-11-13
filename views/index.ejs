@@ -1,31 +1,57 @@
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
-  </head>
-  <body>
-    <main>
-      <% if (locals.weather) { %>
 
-      <h1>Weather in <%= weather.cityName %></h1>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
+</head>
+
+<body>
+  <main>
+    <% if (locals.weather) { %>
+      <h1>Weather in <%= weather.cityName %>
+      </h1>
       <section class="days">
-        <% weather.list.forEach(day => { %>
-        <section class="day">
-          <h2 class="day__date"><%= day.date %></h2>
+        <% weather.list.forEach(day=> { %>
+          <section class="day">
+            <h2 class="day__date">
+              <%= day.date %>
+            </h2>
 
-          <% day.list.forEach(interval => { %>
-          <div class="day__interval">
-            <%= interval.hour %> <%= interval.weatherMain %>
-            <p><%= interval.weatherDescription %></p>
-            <p><%= interval.temp %> °F</p>
-            <p>Feels like <%= interval.feelsLike %> °F.</p>
-          </div>
+            <% day.list.forEach(interval=> { %>
+              <div class="day__interval">
+                <p>
+                  <%= interval.hour %>
+                </p>
+                <div class="interval__weather">
+                  <h3>
+                    <%= interval.weatherDescription %>
+                  </h3>
+                </div>
+                <div class="interval__temp">
+                  <p>
+                    <%= interval.temp %> °F
+                  </p>
+                </div>
+              </div>
+              <% }) %>
+          </section>
           <% }) %>
-        </section>
-        <% }) %> 
-        <% } else { %>
-            
-          <% } %>
+            <% } else { %>
+              <h1>Welcome to My Weather App</h1>
+              <form action="/weather" method="POST">
+                <div class="field">
+                  <label for="latitude">Enter latitude</label>
+                  <input type="text" id="latitude" name="latitude" required>
+                </div>
+                <div class="field">
+                  <label for="longitude">Enter longitude</label>
+                  <input type="text" id="longitude" name="longitude" required>
+                </div>
+
+                <input type="submit" id="submit" value="Find weather">
+              </form>
+              <% } %>
       </section>
-    </main>
-  </body>
+  </main>
+</body>
+
 </html>
